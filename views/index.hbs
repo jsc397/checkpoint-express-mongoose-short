@@ -1,0 +1,13 @@
+//need to create for test: should include a list of Notes with author and titles displayed
+
+{{#each notes}} //iterate for each of the notes
+  <div>
+
+    <ul>
+      <a href="/notes/{{this.id}}"> //this is so that when you click you see the view
+      <li> {{this.title}} </li>
+      <li> {{this.author}}</li>
+    </ul>
+
+  </div>
+  {{/each}}
